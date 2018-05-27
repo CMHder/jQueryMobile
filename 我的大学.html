@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script>
+function displayDate(){
+	document.getElementById("demo").innerHTML=Date();
+}
+</script>
+
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header"data-position="inline">
+    <h1>欢迎来到我的大学生活</h1>
+     <div data-role="navbar">
+      <ul>
+        <li><a href="#" class="ui-btn-active" data-icon="home">主页</a></li>
+        <li><a href="#"  data-icon="arrow-r">某页</a></li>
+        <li><a href="#"  class="ui-btn-active ui-state-persist" data-icon="search">搜索</a></li>
+      </ul>
+     </div>
+  </div>
+
+  <p id="demo">这是一个段落</p>
+
+<button type="button" onclick="displayDate()">显示日期</button>
+
+
+  <div data-role="panel" id="myPanel" data-position-fixed="true"> 
+    <h2>这是一个面板</h2>
+    <p>姓名：程明浩</p>
+    <p>性别：男</p>
+    <p>学校：沈阳工业大学</p>
+    <p>专业班级：计算机1501</p>
+    <p>身高：182</p>
+    <p>体重：70</p>
+    <p>爱好：男</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline  ui-icon-delete ui-btn-icon-left">关闭面板</a>
+  </div> 
+  <div data-role="main" class="ui-content">
+    <a href="#myPanel" class="ui-btn ui-corner-all ui-shadow">查看基本信息</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <div data-role="controlgroup"   >
+    <a href="D:\Sublime\我的学业.html" data-role="button">点击：我的学业</a>
+    <a href="D:\Sublime\我的社团.html"data-role="button">点击：我的社团</a>
+    <a href="D:\Sublime\我的朋友.html"data-role="button">点击：我的朋友</a>
+    <img src="D:\jquery\picture\15.jpeg">
+    </div>
+
+    <div data-role="collapsibleset" >
+      <div data-role="collapsible" >
+        <h3>点击QQ关注</h3>
+        <img src="D:\jquery\picture\6.jpg">
+      </div>
+      <div data-role="collapsible">
+        <h3>点击微信关注</h3>
+        <img src="D:\jquery\picture\7.png">
+      </div>
+      <div data-role="collapsible">
+        <h3>千万别点！</h3>
+        <h1>诱惑吗？</h1>
+        <img src="D:\jquery\picture\8.jpg">
+      </div>
+    </div>
+
+    <h2>本网页适合的浏览器</h2>
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider">浏览器</li>
+      <li>
+        <a href="#"><img src="D:\jquery\picture\33.jpg">
+        <h2>Google Chrome</h2><p>Google Chrome 是免费的开源 web 浏览器。发布于 2008 年。</p>
+        </a>
+        <a href="#download" data-transition="pop" data-icon="gear">下载浏览器</a>
+      </li>
+      <li>
+        <a href="#"><img src="D:\jquery\picture\34.jpg">
+        <h2>Mozilla Firefox</h2><p>Firefox 是来自 Mozilla 的 web 浏览器。发布于 2004 年。</p>
+        </a>
+        <a href="#download" data-transition="pop" data-icon="gear">下载浏览器</a>
+      </li>
+    </ul>
+
+
+</div>
+
+
+
+ <div data-role="footer" style="text-align:center;" >
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Facebook上关注我</a>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Twitter上关注我</a>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Instagram上关注我</a>
+  </div>
+<div data-role="footer">
+<h1>美好的大学生时光</h1>
+</div>
+</div>
+
+<div data-role="page" id="download" data-dialog="true">
+  <div data-role="main" class="ui-content">
+   <h3>拆分按钮实例</h3>
+    <p>该按钮仅供演示。</p>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini" data-rel="back">下载</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left ui-mini" data-rel="back">取消</a>
+  </div>
+</div> 
+
+
+</body>
+</html>

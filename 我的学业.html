@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+<div data-role="page" id="two">
+  <div data-role="header">
+  <h1>以下是我的学业状况</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <p>现在已经是大三下了，大学本科生活还有一年左右时间了，过得可真快。涌进了考研洪流的我一时还挺焦虑的，偶尔会睡不好。</p>
+
+   <div data-role="collapsible">
+     <h1>点击查看考研进度................这是可折叠快的嵌套</h1>
+       <div data-role="collapsible">
+       <h1>数学：</h1>
+       <p>高数基础课程上册结束了，今天24号开始下册基础课。同时，强化刚开始不久。线性代数之前看了，看到那记不太清了。概率论需要看具体的院校，因为听说简单，留到最后确定</p>
+       </div>
+       <div data-role="collapsible">
+       <h1>英语：</h1>
+       <p>英语基础还挺好的，从寒假就开始了，可以说没啥压力了，恋恋有词差不多两遍了，每天能看点就可以</p>
+       </div>
+       <div data-role="collapsible">
+       <h1>专业课：</h1>
+       <p>有些摸不着头脑，先攻数据结构吧</p>
+       </div>
+       <div data-role="collapsible">
+       <h1>政治：</h1>
+       <p>没开始</p>
+       </div>
+       <div data-role="collapsible">
+       <h1>正常课业：</h1>
+       <p>每天一个算法；两篇科技帖子</p>
+       </div>
+   </div>
+ 
+   <a href="#跳出来" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all " data-position-to="window">查看学习状态，显示弹窗</a>
+    <div data-role="popup" id="跳出来" class="ui-content">
+      <p>这是一个简单的照片弹窗</p>
+      <a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">关闭</a>
+      <img src="D:\jquery\picture\9.jpg"  style="width:400px;height:600px;"  alt="Skaret View">
+    </div>
+
+  <p>学业方面，一直是不温不火，没有及其差的学科，也没有十分友优异的成绩，奖学金没获得过，真的很遗憾，每天也没闲着，忙忙碌碌.</p>
+  <p>最近在学的c#还挺符合我的胃口（设计加代码）。我想了想为什么会对他抱有兴趣，应该是他会给我即刻的反馈，让我在短时间就是知道什么地方出问题了，什么地方还有改进的必要。整体原因是因为总是很急，很着急，很焦虑，这个时候c#以这样一种姿态出现在我眼前，即刻的反馈会给人满足感。这学期的图形学学了一段时间，也快坚持不住了，呜呜呜~~~</p>
+  <p>最近给自己制定了计划，考研复习计划。英语：恋练有词，每天一单元，可以看视频，可以光背。当然了，光背的时间压力会小一些。数学：速度有些慢了，计划是基础强化一起走，每天基础新课两节，强化课一节。距离5月份结束还有一个多星期，加油了，数学是一个大难关。专业课：有些不温不火，计划每天一算法，坚持住啊，小宝贝~~~，数据结构2到3天看一单元。公众号里的帖子，以及菜鸟教程，每天上机1个半点到两个点。</p>
+
+<a href="D:\Sublime\我的大学.html" data-role="button">返回我的大学</a>
+
+<h2>本网页适合的浏览器</h2>
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider">浏览器</li>
+      <li>
+        <a href="#">
+        <img src="D:\jquery\picture\33.jpg">
+        <h2>Google Chrome</h2>
+        <p>Google Chrome 是免费的开源 web 浏览器。发布于 2008 年。</p>
+        </a>
+        <a href="#download" data-transition="pop" data-icon="gear">下载浏览器</a>
+      </li>
+      <li>
+        <a href="#">
+        <img src="D:\jquery\picture\34.jpg">
+        <h2>Mozilla Firefox</h2>
+        <p>Firefox 是来自 Mozilla 的 web 浏览器。发布于 2004 年。</p>
+        </a>
+        <a href="#download" data-transition="pop" data-icon="gear">下载浏览器</a>
+      </li>
+    </ul>
+
+
+</div>
+
+<div data-role="footer" style="text-align:center;" >
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Facebook上关注我</a>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Twitter上关注我</a>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Instagram上关注我</a>
+</div>
+<div data-role="footer">
+<h1>美好的大学生时光</h1>
+</div>
+
+</div>
+
+<div data-role="page" id="download" data-dialog="true">
+  <div data-role="main" class="ui-content">
+   <h3>拆分按钮实例</h3>
+    <p>该按钮仅供演示。</p>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini" data-rel="back">下载</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left ui-mini" data-rel="back">取消</a>
+  </div>
+</div> 
+
+
+</body>
+</html>

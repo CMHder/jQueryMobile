@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<div data-role="page" id="four">
+<div data-role="header">
+<h1>以下是我的朋友</h1>
+</div>
+<div data-role="main" class="ui-content">
+<p>我的性格自问还算让人喜欢，时间有限，不可能跟大家都成好朋友，我觉得，只要日后提起不被唾骂，即可以</p>
+<p>高中还在联系的人寥寥无几，只有瑞林，朱杰，很正常</p>
+<p>大学，主要的交际圈都在社团了，可是也提过了，尴尬地位，几个室友都还好相处，很开心，很感谢他们对我的包容</p>
+<p>大学也疯狂过，比如出去x，疯狂撩，撩了不少人，呜呜呜~~~现在，我喜欢的、超级喜欢的shb，今天中午撞见了，却连打招呼勇气都没有~~~</p> 
+
+<table data-role="table" class="ui-responsive">
+      <thead>
+        <tr>
+          <th>序号</th>
+          <th>姓名</th>
+          <th>学校</th>
+          <th>亲密程度</th>
+          <th>好看吗？</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <th>黄和平</th>
+          <td>工业大学</td>
+          <td>傻逼室友</td>
+          <td>肥而不腻</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>赵瑞林</td>
+          <td>沈航</td>
+          <td>闺蜜</td>
+          <td>美死了</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>戴春宁</td>
+          <td>工业大学</td>
+          <td>好基友</td>
+          <td>也就那么回事</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>田佳威</td>
+          <td>工业大学</td>
+          <td>战友兼闺蜜</td>
+          <td>化妆还可以</td>
+        </tr>
+      </tbody>
+    </table>
+
+ 
+    <h2>我的通讯录</h2>
+    <form class="ui-filterable">
+      <input id="myFilter" data-type="search" placeholder="搜索">
+    </form>
+    <ul data-role="listview" data-filter="true" data-input="#myFilter" data-autodividers="true" data-inset="true">
+      <li><a href="#adelePage">Adele<img src="D:\jquery\picture\15.jpeg"></a></li>
+      <li><a href="#">Agnes</a></li>
+      <li><a href="#">Albert</a></li>
+      <li><a href="#billyPage">Billy</a></li>
+      <li><a href="#">Bob</a></li>
+      <li><a href="#">Calvin</a></li>
+      <li><a href="#">Cameron</a></li>
+      <li><a href="#">Chloe</a></li>
+      <li><a href="#">Christina</a></li>
+      <li><a href="#">Diana</a></li>
+      <li><a href="#">Gabriel</a></li>
+      <li><a href="#">Glen</a></li>
+      <li><a href="#">Ralph</a></li>
+      <li><a href="#">Valarie</a></li>
+    </ul>
+
+    <div data-role="panel" id="adelePage" data-position="right"> 
+    <h2>这是一个面板</h2>
+    <p>姓名：程明浩</p>
+    <p>性别：男</p>
+    <p>学校：沈阳工业大学</p>
+    <p>专业班级：计算机1501</p>
+    <p>身高体重：182 70</p>
+    <p>爱好：男</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+    </div> 
+
+    <div data-role="panel" id="billyPage"> 
+    <h2>Billy Smith</h2>
+    <p>Phone number: 212-330-5200</p>
+    <p>Address: 350 Fifth Avenue
+    <p>New York, NY 10118-3299 USA</p>
+    <p>Email: theoneandonlybilly@gmail.com</p>
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+    </div> 
+
+
+  <a href="#可折叠弹窗列表" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-gear ui-btn-icon-left">小秘密</a>
+    <div data-role="popup" id="可折叠弹窗列表" class="ui-content">
+      <h3>Choose a name</h3>
+      <div data-role="collapsible-set" data-collapsed-icon="arrow-r" data-expanded-icon="arrow-d" ui-btn-icon-right style="width:270px;">
+        <div data-role="collapsible">
+        <h4>Z</h4>
+          <ul data-role="listview">
+            <li><a href="#zzb">Zzb</a></li>
+            <li><a href="#">Zsc</a></li>
+          </ul>
+        </div>
+        <div data-role="collapsible">
+        <h2>S</h2>
+          <ul data-role="listview">
+            <li><a href="#shb">Shb</a></li>
+            <li><a href="#">Snd</a></li>
+          </ul>
+        </div>
+        <div data-role="collapsible">
+        <h4>C</h4>
+          <ul data-role="listview">
+            <li><a href="#">Calvin</a></li>
+            <li><a href="#">Cameron</a></li>
+            <li><a href="#">Chloe</a></li>
+            <li><a href="#">Christina</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+<a href="D:\Sublime\我的大学.html" data-role="button">返回我的大学</a>
+
+<h2>本网页适合的浏览器</h2>
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider">浏览器</li>
+      <li>
+        <a href="#"><img src="D:\jquery\picture\33.jpg">
+        <h2>Google Chrome</h2><p>Google Chrome 是免费的开源 web 浏览器。发布于 2008 年。</p>
+        </a>
+        <a href="#download" data-transition="pop" data-icon="gear">下载浏览器</a>
+      </li>
+      <li>
+        <a href="#"><img src="D:\jquery\picture\34.jpg">
+        <h2>Mozilla Firefox</h2><p>Firefox 是来自 Mozilla 的 web 浏览器。发布于 2004 年。</p>
+        </a>
+        <a href="#download" data-transition="pop" data-icon="gear">下载浏览器</a>
+      </li>
+    </ul>
+
+    
+
+
+
+</div>
+
+ <div data-role="footer" style="text-align:center;" >
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Facebook上关注我</a>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Twitter上关注我</a>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Instagram上关注我</a>
+  </div>
+<div data-role="footer">
+<h1>美好的大学生时光</h1>
+</div>
+</div>
+
+<div data-role="page" id="download" data-dialog="true">
+  <div data-role="main" class="ui-content">
+   <h3>拆分按钮实例</h3>
+    <p>该按钮仅供演示。</p>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini" data-rel="back">下载</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-delete ui-btn-icon-left ui-mini" data-rel="back">取消</a>
+  </div>
+</div> 
+
+<div data-role="page" id="zzb" data-dialog="true">
+  <div data-role="main" class="ui-content">
+   <h3>真的要看？</h3>
+    <a href="#要看" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini">是的</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-back ui-btn-icon-left ui-mini" data-rel="back">返回</a>
+  </div>
+</div> 
+<div data-role="page" id="要看" data-dialog="true">
+  <div data-role="main" class="ui-content">
+   <h3>好臭不要脸</h3>
+    <a href="#看吧" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini">就是不要脸</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-back ui-btn-icon-left ui-mini" data-rel="back">返回</a>
+  </div>
+</div> 
+<div data-role="page" id="看吧">
+  <div data-role="main" class="ui-content">
+   <h3>好帅的男人，应该很好吃吧，哈哈</h3>
+   <h3>好久之前，参加院演讲比赛，就认识他，而且很喜欢他的口音，做作的可爱。我发现我对有口音的男人很着迷</h3>
+   <h3>所以，这次的英语辩论，我找到了他，没想到，一路过关斩将，走到了最后。有机会参加国赛，酝酿了一假期，还是算了。</h3>
+   <h3>本以为，能住在一块，发生些什么，感觉他很开放，哈哈，应该不会拒绝我吧。</h3>
+   <img src="D:\jquery\picture\zzb.jpg">
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini"data-rel="back">确实帅</a>
+  </div>
+</div> 
+
+<div data-role="page" id="shb" data-dialog="true">
+  <div data-role="main" class="ui-content">
+   <h3>真的要看？</h3>
+    <a href="#要看" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini">是的</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-back ui-btn-icon-left ui-mini" data-rel="back">返回</a>
+  </div>
+</div> 
+<div data-role="page" id="要看" data-dialog="true">
+  <div data-role="main" class="ui-content">
+   <h3>好臭不要脸</h3>
+    <a href="#看吧" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini">就是不要脸</a>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-back ui-btn-icon-left ui-mini" data-rel="back">返回</a>
+  </div>
+</div> 
+<div data-role="page" id="看吧">
+  <div data-role="main" class="ui-content">
+   <h3>好帅的男人，真的，看照片的第一眼，有些不可思议，觉得我们学校不会有这儿么帅的吧，之后的几次偶遇，小心脏真的扑通扑通在跳。</h3>
+   <h3>之后，基本上算是没怎么说过话，觉得我还想还配不上他。真心喜欢他的样子，之后在信息楼，真的紧张的要死，他好像也挺紧张的，话都说不利索。哈哈。</h3>
+   <h3>之后的状况，看得出，他对我没意思。没办法，我也能理解，就好像我对不喜欢的人的态度一样，你花再大的功夫依旧是枉然。。。。。。</h3>
+   <h3>最后，想对他说，我喜欢你，很喜欢你。你的大学时光刚刚开始，而我在考研的路上，我们注定越来越远，希望你一切安好</h3>
+   <img src="D:\jquery\picture\s1.jpeg">
+   <img src="D:\jquery\picture\s2.jpeg">
+   <img src="D:\jquery\picture\s3.jpeg">
+   <img src="D:\jquery\picture\s4.jpeg">
+   <img src="D:\jquery\picture\s5.jpeg">
+   <img src="D:\jquery\picture\s6.jpeg">
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini"data-rel="back">确实帅</a>
+  </div>
+</div>
+
+
+
+</body>
+</html>

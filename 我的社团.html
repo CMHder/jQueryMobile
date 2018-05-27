@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<style>
+tr {
+    border-bottom: 1px solid lightgray;
+}
+tr:nth-child(even){
+	background: #e9e9e9;
+}
+</style>
+
+</head>
+
+<div data-role="page" id="three">
+<div data-role="header">
+<h1>以下是我的社团活动</h1>
+</div>
+<div data-role="main" class="ui-content">
+<p>现如今，再想起社团活动已经很模糊和冷淡了，不知道是不是大一大二用力过猛的原因</p>
+<p>大一大二整个生活都很丰富多彩,科协和电台，处理的很好</p>
+<p>那么多活动的主持都堪称完美：科协闭幕晚会、青春广场科技节开幕式、<a href="D:\jquery\picture\14.jpg">辩论赛主持</a>、<a href="D:\jquery\picture\12.jpg">挑战杯主持</a>、军训汇演主持、院迎新主持、主持人大赛主持、<a href="D:\jquery\picture\16.jpg">电台晚会主持</a>、百团大战主持。还真不少。。。</p>
+<p>大三了，却做出了怎样都想不到的决定，退出科协，说来都是心酸。现在想想，当初的决定有些鲁莽，于我来说各方面没有变的更好；于校队来说亦然</p>
+<p>但不论怎么样，就目前状况还不错，祝福。大学文艺生活真的很享受，很享受成功的喜悦，也充分体会够了，现在，我的心思唯在学习</p>
+
+<table data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow" data-column-btn-text="点击选择列项" id="myTable">
+      <thead>
+        <tr> 
+          <th>姓名</th>
+          <th data-priority="1">学校</th>
+          <th data-priority="2">性别</th>
+          <th data-priority="3">职位</th>
+          <th data-priority="4">QQ</th>
+          <th data-priority="5">微信</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>张琳</td>
+          <td>沈工大</td>
+          <td>female</td>
+          <td>副台长</td>
+          <td>12345</td>
+          <td>12345</td> 
+        </tr>
+        <tr>
+          <td>乔万夫</td>
+          <td>沈工大</td>
+          <td>male</td>
+          <td>科协主席</td>
+          <td>12345</td>
+          <td>12345</td> 
+        </tr>
+        <tr>
+          <td>马思怡</td>
+          <td>沈工大</td>
+          <td>female</td>
+          <td>文艺部部长</td>
+          <td>12345</td>
+          <td>12345</td> 
+        </tr>
+        <tr>
+          <td>王昕婷</td>
+          <td>沈工大</td>
+          <td>female</td>
+          <td>辩论队教练</td>
+          <td>12345</td>
+          <td>12345</td> 
+        </tr>
+
+      </tbody>
+    </table>
+
+    <a href="#myPopup" data-rel="popup" class="ui-btn ui-btn-inline ui-corner-all ui-icon-gear ui-btn-icon-left">具体了解某人。。。。弹窗列表</a>
+
+    <div data-role="popup" id="myPopup">
+      <ul data-role="listview" data-inset="true" style="min-width:250px;">
+        <li><a href="#张琳">张琳</a></li>
+        <li><a href="#乔万夫">乔万夫</a></li>
+        <li><a href="#马思怡">马思怡</a></li>
+        <li><a href="#王昕婷">王昕婷</a></li>
+      </ul>
+    </div>
+    
+<a href="D:\Sublime\我的大学.html" data-role="button">返回我的大学</a>
+
+<h2>本网页适合的浏览器</h2>
+    <ul data-role="listview" data-inset="true">
+      <li data-role="divider">浏览器</li>
+      <li><a href="#"><img src="D:\jquery\picture\33.jpg">
+        <h2>Google Chrome</h2><p>Google Chrome 是免费的开源 web 浏览器。发布于 2008 年。</p>
+        </a>
+        <a href="#download" data-transition="fade" data-icon="gear">下载浏览器</a>
+      </li>
+      <li><a href="#"><img src="D:\jquery\picture\34.jpg">
+        <h2>Mozilla Firefox</h2><p>Firefox 是来自 Mozilla 的 web 浏览器。发布于 2004 年。</p>
+        </a>
+        <a href="#download" data-transition="pop" data-icon="gear">下载浏览器</a>
+      </li>
+    </ul>
+
+
+</div>
+
+
+
+ <div data-role="footer" style="text-align:center;" >
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Facebook上关注我</a>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Twitter上关注我</a>
+    <a href="#" class="ui-btn ui-corner-all ui-shadow ui-icon-plus ui-btn-icon-left">在Instagram上关注我</a>
+  </div>
+<div data-role="footer">
+<h1>美好的大学生时光</h1>
+</div>
+</div>
+
+<div data-role="page" id="张琳" data-dialog="true">
+  <div data-role="main" class="ui-content">
+    <p>张琳，</p>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini" data-rel="back">返回</a>
+  </div>
+</div>
+<div data-role="page" id="乔万夫" data-dialog="true">
+  <div data-role="main" class="ui-content">
+    <p>乔万夫，</p>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini" data-rel="back">返回</a>
+  </div>
+</div> 
+<div data-role="page" id="马思怡" data-dialog="true">
+  <div data-role="main" class="ui-content">
+    <p>马思怡，</p>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini" data-rel="back">返回</a>
+  </div>
+</div> 
+<div data-role="page" id="王昕婷" data-dialog="true">
+  <div data-role="main" class="ui-content">
+    <p>王昕婷，</p>
+    <a href="#" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left ui-mini" data-rel="back">返回</a>
+  </div>
+</div> 
+
+
+</body>
+</html>
